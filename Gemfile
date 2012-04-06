@@ -19,7 +19,7 @@ gem "jquery-rails"
 gem "haml"
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', "~>2.9.0"
   gem "capybara"
   gem "spork", "> 0.9.0.rc"
   gem "guard-spork"
