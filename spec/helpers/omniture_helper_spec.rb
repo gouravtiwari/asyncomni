@@ -22,38 +22,11 @@ describe OmnitureHelper do
     helper.omniture_url.should == "#{omniture_url}?page_name=#{home}&user_id=#{id}&application_name=demo-app"
   end
 
-  it "should return page name for home page" do
-    helper.should_receive(:controller_name).exactly(1).times.and_return('report')
-    helper.should_receive(:action_name).exactly(2).times.and_return('home')
-
-    helper.page_name.should == "demo-app_Home"
-  end
-
-  it "should return page name for offshore page" do
-    helper.should_receive(:controller_name).exactly(2).times.and_return('report')
-    helper.should_receive(:action_name).and_return('index')
-
-    helper.page_name.should == "demo-app_Offshore"
-  end
-
   it "should return page name for users index page" do
-    helper.should_receive(:controller_name).exactly(3).times.and_return('users')
-    helper.should_receive(:action_name).exactly(2).times.and_return('index')
+    helper.should_receive(:controller_name).exactly(1).times.and_return('users')
+    helper.should_receive(:action_name).exactly(1).times.and_return('index')
 
     helper.page_name.should == "demo-app_Users_Index"
-  end
-
-  it "should return page name for site map page" do
-    helper.should_receive(:controller_name).and_return('report')
-    helper.should_receive(:action_name).exactly(2).times.and_return('site_map')
-
-    helper.page_name.should == "demo-app_SiteMap"
-  end
-
-  it "should return page name for test page" do
-    pending
-    
-    helper.page_name.should == "demo-app_test"
   end
 
   it "should have omniture formatted time" do

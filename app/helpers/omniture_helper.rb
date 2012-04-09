@@ -24,18 +24,14 @@ module OmnitureHelper
   def page_name
     name = []
     name << application_name
-    name << (@metric.nil? ? page_name_by_url : @metric.code)
+    name << page_name_by_url
     name.join('_')
   end
 
   def page_name_by_url
     name = []
-    name << controller_name.gsub('/','_').camelize if (controller_name != 'report')
-    if (action_name == 'index' && controller_name == 'report')
-      name << 'Offshore' 
-    else
-      name << action_name.gsub('/','_').camelize
-    end
+    name << controller_name.gsub('/','_').camelize
+    name << action_name.gsub('/','_').camelize
     name.join('_')
   end
 
