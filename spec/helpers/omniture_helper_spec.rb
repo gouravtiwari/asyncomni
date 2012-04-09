@@ -16,10 +16,9 @@ describe OmnitureHelper do
   end
 
   it "should return omniture url" do
-    pending
-    helper.should_receive(:current_user).and_return(stub(:id => id = 5))
+    helper.should_receive(:user_id).and_return(id = 5)
     helper.should_receive(:page_name).and_return(home = "Home")
-    helper.omniture_url.should == "#{omniture_url}?page_name=#{home}&user_id=#{id}&application_name=demo-app"
+    helper.omniture_url.should == "#{omniture_index_url}?page_name=#{home}&user_id=#{id}&application_name=demo-app"
   end
 
   it "should return page name for users index page" do

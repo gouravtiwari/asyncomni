@@ -24,12 +24,6 @@ module OmnitureHelper
   def page_name
     name = []
     name << application_name
-    name << page_name_by_url
-    name.join('_')
-  end
-
-  def page_name_by_url
-    name = []
     name << controller_name.gsub('/','_').camelize
     name << action_name.gsub('/','_').camelize
     name.join('_')
