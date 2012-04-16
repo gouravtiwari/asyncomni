@@ -7,14 +7,14 @@ require "asyncomni/version"
 Gem::Specification.new do |s|
   s.name        = "asyncomni"
   s.version     = Asyncomni::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Asyncomni."
-  s.description = "TODO: Description of Asyncomni."
+  s.authors     = ["Gourav Tiwari"]
+  s.email       = ["gouravtiwari21@gmail.com"]
+  s.homepage    = "https://github.com/gouravtiwari/asyncomni"
+  s.summary     = "Asyncomni is an engine, which can be used with a rails application for omniture integration."
+  s.description = "More to come"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 3.2.2"
 
