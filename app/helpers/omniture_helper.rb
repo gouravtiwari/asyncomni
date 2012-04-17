@@ -18,7 +18,11 @@ module OmnitureHelper
   end
 
   def user_id
-    current_user.id
+    begin 
+      current_user.id
+    rescue
+      "unknown"
+    end
   end
   
   def page_name

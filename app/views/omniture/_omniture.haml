@@ -3,8 +3,8 @@
 = javascript_include_tag 's_code'
 %script{:language => "JavaScript"}
   s.pageName=parent.document.getElementById('omnitureFrame').attributes.getNamedItem('data-page-name').value;
-  s.prop12='#{current_user.id}';
-  s.prop26='#{Omniture.application_name}';
+  s.prop12='#{user_id}';
+  s.prop26='#{application_name}';
   s.prop37='#{request.session_options[:id]}';
   s.prop98='#{omniture_formatted_time}';
 %script{:language => "JavaScript"}
