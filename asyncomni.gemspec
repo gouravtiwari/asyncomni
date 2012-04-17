@@ -10,13 +10,14 @@ Gem::Specification.new do |s|
   s.authors     = ["Gourav Tiwari"]
   s.email       = ["gouravtiwari21@gmail.com"]
   s.homepage    = "https://github.com/gouravtiwari/asyncomni"
-  s.summary     = "Asyncomni is an engine, which can be used with a rails application for omniture integration."
-  s.description = "More to come"
+  s.summary     = "Makes omniture calls from rails 3.1 easier and asynchronous without ajax-calls"
+  s.description = "Asyncomni is an engine, which can be used with a rails application for omniture integration."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 3.2.2"
+  s.add_dependency "haml", "~> 3.1.4"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails", "~> 2.9.0"
