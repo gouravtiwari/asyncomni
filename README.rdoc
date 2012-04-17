@@ -6,9 +6,11 @@ This gem is currenly in early beta version but provides support of tracking user
 
 = Pre-requisites:
 For rails 3.1.x applications:
+
 gem install asyncomni
 
 or in application's Gemfile add:
+
 gem 'asyncomni'
 
 = How to use:
