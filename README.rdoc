@@ -12,6 +12,7 @@ gem install asyncomni
 or in application's Gemfile add:
 
 gem 'asyncomni'
+gem 'haml' //this is for the time being!
 
 = How to use:
  
