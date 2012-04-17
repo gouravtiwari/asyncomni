@@ -1,0 +1,18 @@
+---
+defaults: &defaults
+  application_name: 'demo-app'
+  sprop_mappings:
+    user_id: 'prop12'
+    page_name: 'prop82'
+    site_name: 'prop26'
+    session_id: 'prop37'
+    timestamp: 'prop98'
+production:
+  account: 'proddemoapp'
+  <<: *defaults
+development:
+  account: 'devdemoapp'
+  <<: *defaults
+test:
+  account: 'testdemoapp'
+  <<: *defaults

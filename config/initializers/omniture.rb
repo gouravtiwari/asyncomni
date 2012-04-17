@@ -1,4 +1,4 @@
-omniture_config = YAML.load(File.read(File.expand_path('../../omniture.yml', __FILE__)))[Rails.env]
+omniture_config = YAML.load_file("#{Rails.root}/config/omniture.yml")[Rails.env]
 
 Omniture.tracking_account = omniture_config["account"]
 Omniture.application_name =  omniture_config["application_name"]

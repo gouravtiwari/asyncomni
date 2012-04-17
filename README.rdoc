@@ -14,6 +14,11 @@ or in application's Gemfile add:
 gem 'asyncomni'
 
 = How to use:
+ 
+ run:
+
+ rails g asyncomni:install
+
 Add below line to the layout, e.g. layout/aplication.html.erb
 
 <iframe id ="omnitureFrame" name="omnitureFrame" width="0" height="0" style="visibility:hidden" data-page-name="<%=page_name %>" data-omniture-url="<%= omniture_url %>">&nbsp;</iframe>
