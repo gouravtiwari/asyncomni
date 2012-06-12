@@ -3,10 +3,10 @@
 = javascript_include_tag 's_code'
 %script{:language => "JavaScript"}
   s.pageName=parent.document.getElementById('omnitureFrame').attributes.getNamedItem('data-page-name').value;
-  s.prop12='#{user_id}';
-  s.prop26='#{application_name}';
-  s.prop37='#{request.session_options[:id]}';
-  s.prop98='#{omniture_formatted_time}';
+  s.#{Omniture.sprop_for('user_id')}='#{user_id}';
+  s.#{Omniture.sprop_for('site_name')}='#{application_name}';
+  s.#{Omniture.sprop_for('session_id')}='#{request.session_options[:id]}';
+  s.#{Omniture.sprop_for('timestamp')}='#{omniture_formatted_time}';
 %script{:language => "JavaScript"}
   /
     \/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
