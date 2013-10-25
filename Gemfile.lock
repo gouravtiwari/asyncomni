@@ -80,7 +80,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.2.0)
-    nokogiri (1.5.2)
+    nokogiri (1.5.6)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
