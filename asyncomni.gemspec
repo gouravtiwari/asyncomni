@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/gouravtiwari/asyncomni"
   s.summary     = "Makes omniture calls from rails 3.1 easier and asynchronous without ajax-calls"
   s.description = "Asyncomni is an engine, which can be used with a rails application for omniture integration."
-
+  s.licenses    = ['MIT']
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
