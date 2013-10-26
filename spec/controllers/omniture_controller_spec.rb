@@ -6,7 +6,7 @@ describe OmnitureController do
       get :index
 
       response.should be_success
-      response.should render_template("omniture/_omniture")
+      response.should render_template("omniture/_send_to_omniture")
       assigns[:omniture].should_not be_nil
     end
   end
