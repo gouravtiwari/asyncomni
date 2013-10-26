@@ -26,7 +26,7 @@ This will create some file for you.
 
     create  config/omniture.yml
     route   resources :omniture, :only => [:index]
-    create  app/views/layouts/_omniture.html.erb
+    create  app/views/omniture/_omniture.html.erb
     append  app/views/layouts/application.html.erb
 
 Also require `omniture.js` is your `application.js`
