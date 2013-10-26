@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    asyncomni (0.0.1)
+    asyncomni (0.0.2)
       haml (~> 3.1.4)
       rails (>= 3.2.2)
 
