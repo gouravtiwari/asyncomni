@@ -4,7 +4,7 @@ Omniture integration could be painful in rails application. This project uses si
 
 ##Pre-requisites:
 
-For Rails 3+ Applications.
+For Rails 3.2+ and now supports Rails 4 Applications.
 
 ##Installling
 
