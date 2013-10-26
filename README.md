@@ -10,27 +10,28 @@ For Rails 3+ Applications.
 
 Install the gem by
 
-	gem install asyncomni
+  gem install asyncomni
 
 OR
 
 Include the gem in your Gemfile and run bundle install.
 
-	gem 'asyncomni'
+  gem 'asyncomni'
 
 Run the generator
 
-	rails g asyncomni:install
+  rails g asyncomni:install
 
 This will create some file for you.
 
-	create  config/omniture.yml
-    create  app/views/layouts/_omniture.html.erb
-    append  app/views/layouts/application.html.erb
+  create  config/omniture.yml
+  route   resources :omniture, :only => [:index]
+  create  app/views/layouts/_omniture.html.erb
+  append  app/views/layouts/application.html.erb
 
 Also require `omniture.js` is your `application.js`
 
-	= require 'omniture'
+  = require 'omniture'
 
 That's it! :pray:
 
