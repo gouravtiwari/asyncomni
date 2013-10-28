@@ -13,7 +13,11 @@ class Omniture
   end
 
   class << self
-    attr_accessor :sprop_mappings, :application_name, :tracking_account
+    attr_accessor :sprop_mappings, :application_name, :tracking_account, :enabled
+    
+    def enabled?
+      enabled
+    end
 
     def sprop_for property
       sprop = sprop_mappings[property]

@@ -31,4 +31,10 @@ describe OmnitureHelper do
   it "should have omniture formatted time" do
     helper.omniture_formatted_time.should == Time.now.strftime('%m/%d/%Y %I:%M:%S %p')
   end
+
+  it "should have the content tag for omniture footer" do 
+    controller.stub(:controller_name).and_return('widgets')
+    controller.stub(:action_name).and_return('index')
+    helper.asyncomni_content_tag.should == "<iframe data-omniture-url=\"http://test.host/omniture?page_name=demo-app_Widgets_Index&amp;user_id=unknown&amp;application_name=demo-app\" data-page-name=\"demo-app_Widgets_Index\" height=\"0\" id=\"omnitureFrame\" name=\"omnitureFrame\" style=\"visibility:hidden\" width=\"0\" />"
+  end
 end

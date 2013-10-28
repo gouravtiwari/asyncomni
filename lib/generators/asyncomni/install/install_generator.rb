@@ -19,7 +19,7 @@ module Asyncomni
       desc "This Generator is to create omniture partial"
       def create_omniture_partial
         create_file "app/views/omniture/_omniture.html.erb", <<-FILE
-<%= tag(:iframe, id: 'omnitureFrame', name: 'omnitureFrame', width: '0', height: '0', style: 'visibility:hidden', data: {'page-name' =>  page_name, 'omniture-url' =>  omniture_url }) %>
+<%= asyncomni_content_tag %>
         FILE
       end
 
