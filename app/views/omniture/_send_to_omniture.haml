@@ -1,6 +1,6 @@
 %script{:language => "JavaScript"}
   s_account="#{Omniture.tracking_account}";
-= javascript_include_tag 's_code'
+= javascript_include_tag 'application'
 %script{:language => "JavaScript"}
   s.pageName=parent.document.getElementById('omnitureFrame').attributes.getNamedItem('data-page-name').value;
   s.#{Omniture.sprop_for('user_id')}='#{user_id}';

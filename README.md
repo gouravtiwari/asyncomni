@@ -29,9 +29,9 @@ This will create some file for you.
     create  app/views/omniture/_omniture.html.erb
     append  app/views/layouts/application.html.erb
 
-Also require `omniture.js` is your `application.js`
+Also require `asyncomni.js` is your `application.js`
 
-    = require 'omniture'
+    = require 'asyncomni'
 
 That's it! :pray:
 
