@@ -9,10 +9,13 @@ defaults: &defaults
     timestamp: 'prop98'
 production:
   account: 'proddemoapp'
+  enabled: true
   <<: *defaults
 development:
   account: 'devdemoapp'
+  enabled: true
   <<: *defaults
 test:
   account: 'testdemoapp'
+  enabled: false
   <<: *defaults

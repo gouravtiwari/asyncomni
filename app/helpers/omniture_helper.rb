@@ -25,6 +25,12 @@ module OmnitureHelper
     end
   end
   
+  def asyncomni_content_tag
+    if Omniture.enabled?
+     tag(:iframe, id: 'omnitureFrame', name: 'omnitureFrame', width: '0', height: '0', style: 'visibility:hidden', data: {'page-name' =>  page_name, 'omniture-url' =>  omniture_url })
+    end
+  end
+
   def page_name
     name = []
     name << application_name

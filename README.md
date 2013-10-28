@@ -33,6 +33,13 @@ Also require `omniture.js` is your `application.js`
 
     = require 'omniture'
 
+By default Omniture is enabled in all Environments, if you wish to turn it off in `development` or other staging environments you can disable it in `Omniture.yml`
+
+	development:
+  	account: 'devdemoapp'
+  	enabled: false
+  	<<: *defaults
+  	
 That's it! :pray:
 
 **Note**
