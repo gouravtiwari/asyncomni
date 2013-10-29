@@ -7,7 +7,6 @@
   s.#{Omniture.sprop_for('site_name')}='#{application_name}';
   s.#{Omniture.sprop_for('session_id')}='#{request.session_options[:id]}';
   s.#{Omniture.sprop_for('timestamp')}='#{omniture_formatted_time}';
-%script{:language => "JavaScript"}
   /
     \/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
     var s_code=s.t();if(s_code)document.write(s_code);if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-');
