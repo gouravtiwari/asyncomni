@@ -43,6 +43,7 @@ By default Omniture is enabled in all Environments, if you wish to turn it off i
 That's it! :pray:
 
 **Note**
+
 This gem is currenly in early beta version but provides support of tracking user id and page names for user visits.
 
 This project uses MIT-LICENSE.
