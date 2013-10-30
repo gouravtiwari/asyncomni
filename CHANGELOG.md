@@ -1,5 +1,8 @@
 ## CHANGELOG
 
+### 1.0.0
+- Fixed cruicial bug #7 to fix javascript error on page load thanks to @ankit8898
+
 ### 0.0.4
 - Lots of refactoring thanks to @ankit8898
 - Turning on-off feature
