@@ -5,5 +5,4 @@ rvm:
 env:
   - DB=sqlite
 script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate
   - bundle exec rake spec
