@@ -17,5 +17,5 @@ development:
   <<: *defaults
 test:
   account: 'testdemoapp'
-  enabled: true
+  enabled: false
   <<: *defaults

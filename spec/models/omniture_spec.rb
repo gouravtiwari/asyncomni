@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Omniture do
 
  it "should respond to enabled?" do 
- 	Omniture.enabled?.should be_true
+ 	Omniture.enabled?.should be_false
  end
 
   it "should respond to sprop_mappings" do 

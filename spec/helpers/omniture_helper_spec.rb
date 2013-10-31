@@ -6,7 +6,7 @@ describe OmnitureHelper do
   end
 
   it "should return user id" do
-    helper.should_receive(:current_user).and_return(stub(:id => id = 5))
+    helper.should_receive(:current_user).and_return(double(:id => id = 5))
     helper.user_id.should == id
   end
 
@@ -32,9 +32,11 @@ describe OmnitureHelper do
     helper.omniture_formatted_time.should == Time.now.strftime('%m/%d/%Y %I:%M:%S %p')
   end
 
-  it "should have the content tag for omniture footer" do 
-    controller.stub(:controller_name).and_return('widgets')
-    controller.stub(:action_name).and_return('index')
+  it "should have the content tag for omniture footer" do
+    expect(Omniture).to receive(:enabled?).and_return(true)
+    expect(helper).to receive(:controller_name).and_return('widgets').exactly(2).times
+    expect(controller).to receive(:action_name).and_return('index').exactly(2).times
+
     helper.asyncomni_content_tag.should == "<iframe data-omniture-url=\"http://test.host/omniture?page_name=demo-app_Widgets_Index&amp;user_id=unknown&amp;application_name=demo-app\" data-page-name=\"demo-app_Widgets_Index\" height=\"0\" id=\"omnitureFrame\" name=\"omnitureFrame\" style=\"visibility:hidden\" width=\"0\" />"
   end
 end
