@@ -17,8 +17,14 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", ">= 3.2.2"
-  s.add_dependency "haml", "~> 3.1.4"
+  s.add_runtime_dependency "jquery-rails"
 
   s.add_development_dependency "sqlite3"
-  s.add_development_dependency "rspec-rails", "~> 2.9.0"
+  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "spork", "~> 1.0rc"
+  s.add_development_dependency "guard-spork"
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'guard-bundler'
+  s.add_development_dependency "shoulda"
+  s.add_development_dependency "shoulda-matchers"
 end
