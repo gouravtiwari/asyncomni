@@ -1,5 +1,5 @@
 # Asyncomni
-[![Build Status](https://travis-ci.org/gouravtiwari/asyncomni.png)](https://travis-ci.org/gouravtiwari/asyncomni)
+[![Build Status](https://travis-ci.org/gouravtiwari/asyncomni.png)](https://travis-ci.org/gouravtiwari/asyncomni)[![Coverage Status](https://coveralls.io/repos/gouravtiwari/asyncomni/badge.png?branch=master)](https://coveralls.io/r/gouravtiwari/asyncomni?branch=master)
 
 Omniture integration(https://sitecatalyst.omniture.com) could be painful in rails application. This project uses simple concept of using iframe to make asynchronus calls (not ajax!) to omniture to send usage tracking information.
 
